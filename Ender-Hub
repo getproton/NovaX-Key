@@ -74,3 +74,102 @@ local Slider = MainTab:CreateSlider({
    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+            
+local OtherTab = Window:CreateTab("Hubs", nil) -- Title, Image
+local Section = OtherTab:CreateSection("Arsenal",true)
+
+local Button = OtherTab:CreateButton({
+   Name = "Owl Hub",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+   end,
+})
+
+local Button = OtherTab:CreateButton({
+   Name = "Dark Hub",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/arsenal-hub/main/Arsenal%20GamingScripter", true))()
+   end,
+})
+
+
+
+local Button = OtherTab:CreateButton({
+   Name = "Bolts Hub",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/HchNEJBt', true))('Hello, Storm')
+   end,
+})
+
+local Section = OtherTab:CreateSection("BloxFruits",true)
+
+local Button = OtherTab:CreateButton({
+   Name = "Chifa BF",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
+   end,
+
+local Button = OtherTab:CreateButton({
+   Name = "HoHo Hub",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+   end,
+
+local Button = OtherTab:CreateButton({
+   Name = "Loli Hub",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))() 
+   end,
+
+   local Section = OtherTab:CreateSection("Universal",true)
+
+local Button = OtherTab:CreateButton({
+   Name = "Sky Hub",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))() 
+   end,  
+                                
+   local Button = OtherTab:CreateButton({
+   Name = "Universal FE ",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+   end,      
+                                         
+   local Button = OtherTab:CreateButton({
+   Name = "Owl Hub ",
+   Interact = 'Changable',
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+   end,       
+                                        
+local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
+local Section = TeleportTab:CreateSection("Fun",true)
+
+local Toggle = MiscTab:CreateToggle({
+   Name = "Ender Hub on TOP ",
+   Info = "Prints Ender Hub on TOP.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "Toggleexample", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+           print('Ender Hub on TOP')
+   end,
+})
+                                               
+local Slider = MiscTab:CreateSlider({
+   Name = "Walk Speed Extra",
+   Range = {0, 600},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+                            
