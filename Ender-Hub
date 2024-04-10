@@ -94,7 +94,9 @@ local Button = OtherTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/ThunderClient/main/main.lua"))()
-            
+end 
+})
+
 local Button = OtherTab:CreateButton({
    Name = "Bolts Hub",
    Interact = 'Changable',
