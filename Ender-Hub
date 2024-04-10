@@ -146,10 +146,10 @@ local Button = OtherTab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
    end       
                })                          
-local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
+local TeleportTab = Window:CreateTab("Misc", nil) -- Title, Image
 local Section = TeleportTab:CreateSection("Fun",true)
 
-local Toggle = MiscTab:CreateToggle({
+local Toggle = TeleportTab:CreateToggle({
    Name = "Ender Hub on TOP ",
    Info = "Prints Ender Hub on TOP.", -- Speaks for itself, Remove if none.
    CurrentValue = false,
@@ -159,7 +159,7 @@ local Toggle = MiscTab:CreateToggle({
    end
 })
                                                
-local Slider = MiscTab:CreateSlider({
+local Slider = TeleportTab:CreateSlider({
    Name = "Walk Speed Extra",
    Range = {0, 600},
    Increment = 1,
@@ -171,3 +171,63 @@ local Slider = MiscTab:CreateSlider({
                             
   end
 })
+
+local Toggle = TeleportTab:CreateToggle({
+   Name = "print Hello World",
+   Info = "prints Hello world in console.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+print('Hello World!')
+   end,
+}) 
+
+
+local Slider = TeleportTab:CreateSlider({
+   Name = "Walk Speed Extra",
+   Range = {70, 120},
+   Increment = 1,
+   Suffix = "FOV",
+   CurrentValue = 16,
+   Flag = "Slider5", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+            game:GetService("Workspace"):WaitForChild("Camera").FieldOfView = value 
+   end
+ })
+            
+
+ local Button = TeleportTab:CreateButton({
+ Name = "Third Person",
+ Interact = 'Changable',
+ Callback = function()
+  game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = 99999
+  game:GetService("Players").LocalPlayer.CameraMode = Enum.CameraMode.Classic
+   end
+ })
+
+local IslandTab = Window:CreateTab("Discord",nil ) -- Title, Image
+local Section = IslandTab:CreateSection("Invite",true)
+
+local Button = IslandTab:CreateButton({
+ Name = "Discord Invite",
+ Interact = 'Changable',
+ Callback = function()
+ httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+HttpService = game:GetService("HttpService")
+if httprequest then
+        httprequest({
+            Url = 'http://127.0.0.1:6463/rpc?v=1',
+            Method = 'POST',
+            Headers = {
+                ['Content-Type'] = 'application/json',
+                Origin = 'https://discord.com'
+            },
+            Body = HttpService:JSONEncode({
+                cmd = 'INVITE_BROWSER',
+                nonce = HttpService:GenerateGUID(false),
+                args = {code = '85xAbbFApR'}
+            })
+        })
+    end
+   end
+ })     
