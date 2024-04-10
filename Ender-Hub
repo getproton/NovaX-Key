@@ -89,8 +89,12 @@ local Button = OtherTab:CreateButton({
    end
 })
 
-
-
+local Button = OtherTab:CreateButton({
+   Name = "Thunder Client (OP)",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/ThunderClient/main/main.lua"))()
+            
 local Button = OtherTab:CreateButton({
    Name = "Bolts Hub",
    Interact = 'Changable',
