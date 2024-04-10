@@ -184,7 +184,7 @@ print('Hello World!')
 
 
 local Slider = TeleportTab:CreateSlider({
-   Name = "Walk Speed Extra",
+   Name = "FOV Slider",
    Range = {70, 120},
    Increment = 1,
    Suffix = "FOV",
