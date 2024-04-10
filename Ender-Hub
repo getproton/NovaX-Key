@@ -170,4 +170,5 @@ local Slider = MiscTab:CreateSlider({
    Callback = function(Value)
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
                             
+  end
 })
