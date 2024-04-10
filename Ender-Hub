@@ -8,10 +8,7 @@ local Window = Rayfield:CreateWindow({
        Enabled = false,
        FolderName = nil, -- Create a custom folder for your hub/game
        FileName = "Ender Hub"
-    },
-    
-    },
-    
+},
  })
 
  local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
@@ -38,7 +35,7 @@ local Button = MainTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
-   end,
+   end
 })
 
 local Button = MainTab:CreateButton({
@@ -46,7 +43,7 @@ local Button = MainTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Fly.txt"))()
-   end,
+   end
 })
 
 local Slider = MainTab:CreateSlider({
@@ -59,7 +56,7 @@ local Slider = MainTab:CreateSlider({
    Callback = function(Value)
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
             
-   end,
+   end
 })
 
 local Slider = MainTab:CreateSlider({
@@ -71,7 +68,8 @@ local Slider = MainTab:CreateSlider({
    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
-            
+  end
+})
 local OtherTab = Window:CreateTab("Hubs", nil) -- Title, Image
 local Section = OtherTab:CreateSection("Arsenal",true)
 
@@ -80,7 +78,7 @@ local Button = OtherTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-   end,
+   end
 })
 
 local Button = OtherTab:CreateButton({
@@ -88,7 +86,7 @@ local Button = OtherTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/arsenal-hub/main/Arsenal%20GamingScripter", true))()
-   end,
+   end
 })
 
 
@@ -98,7 +96,7 @@ local Button = OtherTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet('https://pastebin.com/raw/HchNEJBt', true))('Hello, Storm')
-   end,
+   end
 })
 
 local Section = OtherTab:CreateSection("BloxFruits",true)
@@ -108,21 +106,22 @@ local Button = OtherTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
-   end,
-
+   end
+})
 local Button = OtherTab:CreateButton({
    Name = "HoHo Hub",
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-   end,
-
+   end
+})
 local Button = OtherTab:CreateButton({
    Name = "Loli Hub",
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))() 
-   end,
+   end
+ })
 
    local Section = OtherTab:CreateSection("Universal",true)
 
@@ -131,22 +130,22 @@ local Button = OtherTab:CreateButton({
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))() 
-   end,  
-                                
+   end
+          })                      
    local Button = OtherTab:CreateButton({
    Name = "Universal FE ",
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
-   end,      
-                                         
+   end      
+              })                           
    local Button = OtherTab:CreateButton({
    Name = "Owl Hub ",
    Interact = 'Changable',
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-   end,       
-                                        
+   end       
+               })                          
 local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
 local Section = TeleportTab:CreateSection("Fun",true)
 
@@ -157,7 +156,7 @@ local Toggle = MiscTab:CreateToggle({
    Flag = "Toggleexample", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
            print('Ender Hub on TOP')
-   end,
+   end
 })
                                                
 local Slider = MiscTab:CreateSlider({
