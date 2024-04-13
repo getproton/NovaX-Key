@@ -1,4 +1,4 @@
-UserInputService = game:GetService("UserInputService")
+
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -37,6 +37,7 @@ end
 function disableInfiniteJump(player)
 	infjumpconc:Disconnect()
 end
+
 local Toggle = MainTab:CreateToggle({
 	Name = "Infinite Jump",
 	Info = "Makes you jump infinately.", -- Speaks for itself, Remove if none.
@@ -142,6 +143,7 @@ local Slider = MainTab:CreateSlider({
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
 	end
 })
+
 local OtherTab = Window:CreateTab("Hubs", nil) -- Title, Image
 local Section = OtherTab:CreateSection("Arsenal", true)
 
@@ -152,6 +154,7 @@ local Button = OtherTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
 	end
 })
+
 local Button = OtherTab:CreateButton({
 	Name = "Owl Hub",
 	Interact = 'Changable',
@@ -185,6 +188,7 @@ local Button = OtherTab:CreateButton({
 })
 
 local Section = OtherTab:CreateSection("BloxFruits", true)
+
 local Button = OtherTab:CreateButton({
 	Name = "Sky Hub (OP Hub)",
 	Interact = 'OP',
@@ -192,6 +196,7 @@ local Button = OtherTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
 	end
 })
+
 local Button = OtherTab:CreateButton({
 	Name = "Chifa BF",
 	Interact = 'Changable',
@@ -199,6 +204,7 @@ local Button = OtherTab:CreateButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
 	end
 })
+
 local Button = OtherTab:CreateButton({
 	Name = "HoHo Hub",
 	Interact = 'Changable',
@@ -206,6 +212,7 @@ local Button = OtherTab:CreateButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 	end
 })
+
 local Button = OtherTab:CreateButton({
 	Name = "Loli Hub",
 	Interact = 'Changable',
@@ -213,6 +220,7 @@ local Button = OtherTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyber-Nonename/LoliHubV2/main/V2LoliHub"))()
 	end
 })
+
 local Section = OtherTab:CreateSection("Universal", true)
 
 local Button = OtherTab:CreateButton({
@@ -222,6 +230,7 @@ local Button = OtherTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
 	end
 })
+
 local Button = OtherTab:CreateButton({
 	Name = "Universal FE Trolling GUI",
 	Interact = 'OP',
@@ -229,13 +238,15 @@ local Button = OtherTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
 	end
 })
+
 local Button = OtherTab:CreateButton({
 	Name = "Owl Hub ",
 	Interact = 'Changable',
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end
-})                          
+})   
+
 local TeleportTab = Window:CreateTab("Misc", nil) -- Title, Image
 local Section = TeleportTab:CreateSection("Fun", true)
 
@@ -364,6 +375,7 @@ local Toggle = TeleportTab:CreateToggle({
 		end)
 	end,
 })
+
 local Button = TeleportTab:CreateButton({
 	Name = "Third Person",
 	Interact = 'Changable',
@@ -372,6 +384,7 @@ local Button = TeleportTab:CreateButton({
 		game:GetService("Players").LocalPlayer.CameraMode = Enum.CameraMode.Classic
 	end
 })
+
 local MiscTab = Window:CreateTab("Admin", nil ) -- Title, Image
 local Section = MiscTab:CreateSection("Main", true)
 
@@ -382,6 +395,7 @@ local Button = MiscTab:CreateButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end
 })
+
 local Button = MiscTab:CreateButton({
 	Name = "Dex Explorer V2",
 	Interact = 'Changable',
@@ -389,6 +403,7 @@ local Button = MiscTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/MariyaFurmanova/Library/main/dex2.0", true))()
 	end
 })
+
 local Button = MiscTab:CreateButton({
 	Name = "Ultimate Admin Script",
 	Interact = 'Changable',
@@ -490,7 +505,7 @@ local Button = MiscTab:CreateButton({
 				_G.JumpHeight = 50;
 				function Action(Object, Function)
 					if Object ~= nil then
-						Function(Object);
+						Function(Object); 
 					end
 				end
 				UIS.InputBegan:connect(function(UserInput)
@@ -526,6 +541,7 @@ local Button = MiscTab:CreateButton({
 		print("Working Admin Script")
 	end
 })
+
 local Button = MiscTab:CreateButton({
 	Name = "Fates Admin V2",
 	Interact = 'Changable',
@@ -533,6 +549,7 @@ local Button = MiscTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 	end
 })
+
 local ScriptTab = Window:CreateTab("FE Scripts", nil ) -- Title, Image
 local Section = ScriptTab:CreateSection("Scripts", true)
 
@@ -543,6 +560,7 @@ local Button = ScriptTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/minecrafttotem/fe-pp-roblix-script/main/Fe%20pp%20script%20(with%20netless)"))()
 	end
 })
+
 local Button = ScriptTab:CreateButton({
 	Name = "FE Troll GUI",
 	Interact = 'Changable',
@@ -550,6 +568,7 @@ local Button = ScriptTab:CreateButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
 	end
 })
+
 local Button = ScriptTab:CreateButton({
 	Name = "Universal FE ",
 	Interact = 'Changable',
