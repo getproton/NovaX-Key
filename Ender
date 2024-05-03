@@ -991,9 +991,131 @@ elseif game.PlaceId == 9865958871 then
 		end,
 	 })
 
+ --Slap Battles
+ elseif game.PlaceId == 6403373529 then
+
+	local Button = MainTab:CreateButton({
+		Name = "dizzy hub",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
+		end,
+	 })
+
+
+	 local Button = MainTab:CreateButton({
+		Name = "Whopper",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/qwertyui-cool/uhh-yes/main/whopper.lua"))()
+		end,
+	 })
 
 
 
+	 local Button = MainTab:CreateButton({
+		Name = "lolez",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomScriptr3/gggggggg/main/lolez.txt", true))()
+		end,
+	 })
+
+
+ --Counter Blox
+elseif game.PlaceId == 6301549746 then
+
+
+
+
+	local Button = MainTab:CreateButton({
+		Name = "Unamed CounterBlox Script",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/CounterBlox.lua', true))()
+		end,
+	 })
+
+
+	 local Button = MainTab:CreateButton({
+		Name = "FelixWare V2",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/PuppyRoblox/FelixWareV2/main/loader.lua"))()
+		end,
+	 })
+
+	 local Button = MainTab:CreateButton({
+		Name = "cBro bot (buggy)",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()		
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/I2345/EX-Scripts/main/cbro%20bot.lua"))()
+		end,
+	 })
+
+
+ --Blade Ball
+elseif game.PlaceId == 13772394625 then
+
+
+	local Button = MainTab:CreateButton({
+		Name = "RV Parry",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet("https://code4zaa.xyz/script/script-loader.lua"))()
+		end,
+	 })
+
+
+	 local Button = MainTab:CreateButton({
+		Name = "R4MPAGE Hub",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/rYVGw0cw"))();
+		end,
+	 })
+
+	 local Button = MainTab:CreateButton({
+		Name = "FFJ Hub",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()		
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+		end,
+	 })
+
+
+ --Ninja Legends
+ elseif game.PlaceId == 3956818381 then
+
+	local Button = MainTab:CreateButton({
+		Name = "BT Project",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGetAsync("https://lua-library.btteam.net/script-auth.txt"))()
+		end,
+	 })
+
+
+	 local Button = MainTab:CreateButton({
+		Name = "Auto Farm (KEY)",
+		Info = ".", -- Speaks for itself, Remove if none.
+		Interact = 'Changable',
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua"))()
+		end,
+	 })
+
+end
 
 local AdminTab = Window:CreateTab("Admin", nil ) -- Title, Image
 local Section = AdminTab:CreateSection("Main", true)
@@ -1238,7 +1360,7 @@ local Toggle = MiscTab:CreateToggle({
 			end)
 		end
 	end,
-}) 
+})         
 
 
 local Slider = MiscTab:CreateSlider({
