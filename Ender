@@ -1452,7 +1452,7 @@ local Button = DiscordTab:CreateButton({
 						cmd = 'INVITE_BROWSER',
 						nonce = HttpService:GenerateGUID(false),
 						args = {
-							code = '85xAbbFApR'
+							code = 'VGqhtctC5b'
 						}
 					})
 				})
