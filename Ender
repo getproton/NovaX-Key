@@ -1114,6 +1114,7 @@ elseif game.PlaceId == 13772394625 then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua"))()
 		end,
 	 })
+end
 
 local AdminTab = Window:CreateTab("Admin", nil ) -- Title, Image
 local Section = AdminTab:CreateSection("Main", true)
