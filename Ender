@@ -17,7 +17,7 @@ local Window = Rayfield:CreateWindow({
 
 Rayfield:Notify({
 	Title = "Ender Hub",
-	Content = "Welcome! You have succesfuly executed this script. Feel free to join the Discord Server, invite is in the 'DISCORD' Tab",
+	Content = "Welcome! You have succesfuly executed this script. Feel free to join the Discord Server, invite is in the 'DISCORD' Tab. Huge creds and thanks to yofriendfromschool1",
 	Duration = 6.5,
 	Image = 4483362458,
 	Actions = { -- Notification Buttons
